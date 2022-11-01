@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{88A823D4-4568-27F0-A4CA-53BBC7833BC7}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Checklist",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
