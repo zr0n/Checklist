@@ -3,7 +3,8 @@ import { WebSocketServer } from "ws";
 const server = new WebSocketServer({ port: 3000 });
 
 let list = [];
-const sockets = []
+const sockets = [];
+let idCounter = 0;
 
 //Manda em formato de json para o usuário
 const sendJson = function (socket, data){
@@ -12,7 +13,9 @@ const sendJson = function (socket, data){
 
 //insere um novo item na lista
 const insert = function(item) {
+    item.id = idCounter;
     list.push(item);
+    idCounter++;
 }
 
 //seta um item da lista como marcado ou desmarcado
