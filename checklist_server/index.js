@@ -1,6 +1,6 @@
 import { WebSocketServer } from "ws";
 
-const server = new WebSocketServer({ port: 3000 });
+const server = new WebSocketServer({ port: 80 });
 
 let list = [];
 const sockets = [];
