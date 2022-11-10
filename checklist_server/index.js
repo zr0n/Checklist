@@ -1,6 +1,8 @@
 import { WebSocketServer } from "ws";
 
-const server = new WebSocketServer({ port: 80 });
+const PORT = process.env.PORT || 3030;
+
+const server = new WebSocketServer({ port: PORT });
 
 let list = [];
 const sockets = [];
@@ -68,4 +70,4 @@ server.on("connection", (socket) => {
   });
 });
 
-console.log("Listening web socket on port 3000");
+console.log("Listening web socket on port " + PORT);
