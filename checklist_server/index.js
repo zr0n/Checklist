@@ -67,3 +67,5 @@ server.on("connection", (socket) => {
     }
   });
 });
+
+console.log("Listening web socket on port 3000");
